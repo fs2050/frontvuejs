@@ -13,8 +13,8 @@
       </thead>
 
       <tbody>
-        <tr v-for="(post, index) in posts" :key="post.id">
-          <td>{{ index + 1 }}</td>
+        <tr v-for="(post,) in posts" :key="post.id">
+      <!--     <td>{{ index + 1 }}</td> -->
           <td>{{ post.title }}</td>
           <td>{{ post.content }}</td>
           <td>{{ post.created_at }}</td>
@@ -26,6 +26,8 @@
   </div>
   <Footer/>
 </template>
+
+
 
 <script>
 import { onMounted, ref } from "vue";
