@@ -1,5 +1,5 @@
 <template>
-<h1>Rodapé da página</h1>
+<h1 class="footer">Footer</h1>
 </template>
 
 <script>
@@ -8,6 +8,13 @@ export default {
 }
 </script>
 
-<style >
+<style scoped>
+
+.footer { 
+    text-align: center;
+    
+    background-color:blue;
+    }
+
 
 </style>

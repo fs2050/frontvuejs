@@ -1,4 +1,5 @@
 <template>
+<Header/>
   <div class="container">
     <table class="table table-striped table-bordered table-hovered">
       <thead>
@@ -23,14 +24,18 @@
 
     </table>
   </div>
+  <Footer/>
 </template>
 
 <script>
 import { onMounted, ref } from "vue";
 /* import Card from "./components/Card"; */
 import axios from "axios";
+import Header from "./components/Header"
+import Footer from "./components/Footer";
 
 export default {
+  components: { Header, Footer },
   name: "App",
   /*   //components: { Card }, */
 
