@@ -4,16 +4,17 @@
 <div id="main" style="text-align:center">
   <nav v-bind:class="active" v-on:click.prevent>
     <a href="#" class="home" v-on:click="makeActive('home')">Home</a>
-    <a href="#" class="projects" v-on:click="makeActive('projects')">Projects</a>
-    <a href="#" class="services" v-on:click="makeActive('services')">Services</a>
-    <a href="#" class="contact" v-on:click="makeActive('contact')">Contact</a>
+    <a href="https://myapil8.herokuapp.com/" class="projects" v-on:click="makeActive('projects')">API</a>
+    <a href="#" class="services" v-on:click="makeActive('services')">Serviços</a>
+    <a href="#" class="contact" v-on:click="makeActive('contact')">Contato</a>
   </nav>
   
-  <p style="text-align:center">You chose <b>{{ active }}</b></p>
+  <p style="text-align:center">Escolha <b>{{ active }}</b></p>
 </div>
 
 <div class="resource" style="text-align:center">
-resource: <a href="http://tutorialzine.com/2016/03/5-practical-examples-for-learning-vue-js/" target="_blank">5 Practical Examples For Learning Vue.js</a>
+resource: <a href="http://tutorialzine.com/2016/03/5-practical-examples-for-learning-vue-js/" target="_blank">
+5 exemplos práticos para aprender Vue.js</a>
  </div>
 
 </template>

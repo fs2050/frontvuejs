@@ -4,6 +4,7 @@
     <table class="table table-striped table-bordered table-hovered">
       <thead>
         <tr class="cab">
+                 <th>N°</th>
           <th>Id</th>
           <th>Título</th>
           <th>Conteúdo</th>
@@ -13,8 +14,9 @@
       </thead>
 
       <tbody>
-        <tr v-for="(post,) in posts" :key="post.id">
-      <!--     <td>{{ index + 1 }}</td> -->
+        <tr v-for="(post, index) in posts" :key="post.id">
+          <td>{{index + 1}}</td>
+          <td>{{ post.id }}</td>
           <td>{{ post.title }}</td>
           <td>{{ post.content }}</td>
           <td>{{ post.created_at }}</td>

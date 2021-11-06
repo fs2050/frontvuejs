@@ -1,5 +1,5 @@
 <template>
-<h1 class="footer">Footer</h1>
+<p class="footer">Fabio Salles</p>
 </template>
 
 <script>
@@ -12,6 +12,7 @@ export default {
 
 .footer { 
     text-align: center;
+    color: white;
     
     background-color:blue;
     }
